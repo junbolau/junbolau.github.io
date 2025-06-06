@@ -19,22 +19,36 @@
         main {
             padding: 2em;
         }
+        .column {
+            float: left;
+            width: 50%;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h1>Jun Bo Lau</h1>
     </header>
-    <main style="display: flex; align-items: center; justify-content: center; min-height: 60vh;">
-        <div style="flex: 1; padding-right: 2em;">
+    <div class ="row">>
+        <section style="padding: 2em; max-width: 900px; margin: 0 auto;">
+        <div class = "column">
             <p>Hello World! I am currently a postdoctoral reesearcher at COSIC, KU Leuven, working with <a href="https://www.esat.kuleuven.be/cosic/people/frederik-vercauteren/" target="_blank" rel="noopener">Frederik Vercauteren</a>. Previously, I was at Boston University, working with <a href="https://math.bu.edu/people/jbala/" target="_blank" rel="noopener">Jennifer Balakrishnan</a>. I obtained my Ph.D. from UC San Diego under the supervision of <a href="https://kskedlaya.org/" target="_blank" rel="noopener">Kiran Kedlaya</a>.</p>
             <p>My research interests include number theory, algebraic geometry, and computational aspects of these fields. I am also interested in the applications of these areas to cryptography and coding theory.</p>
             <p>Feel free to reach out to me at junbo.lauatkuleuven.be (with the obvious replacement).</p>
-        </div>
-        <div style="flex: 0 0 250px; display: flex; justify-content: center;">
-            <img src="profile.jpeg" alt="Profile Photo" style="max-width: 220px; width: 100%; border-radius: 55px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        </div>
-        </main>
+    </div>
+    </section>
+    <div class="column" style="text-align: center;">
+        <img src="profile.jpeg" alt="Profile photo of Jun Bo Lau" style="max-width: 200px; width: 100%; border-radius: 50px; margin-top: 1em;">
+    </div>
+    </div>
+    </section>
+</div>
         <section style="padding: 2em; max-width: 900px; margin: 0 auto;">
         <h2>Publications and preprints</h2>
         <ol>
